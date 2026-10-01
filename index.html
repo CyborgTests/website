@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CyborgTest brings automated and human test results into one place." />
+    <title>CyborgTest — One view of your testing</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="./" aria-label="CyborgTest home"><span class="brand-mark">CT</span><span>CyborgTest</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-nav-toggle>Menu</button>
+        <div class="nav-links" id="nav-links" data-nav-links>
+          <a href="#components">Components</a>
+          <a href="./docs/">Docs</a>
+          <a href="https://github.com/CyborgTests" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="button button-primary" href="./docs/">Get started</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-grid container">
+          <div>
+            <p class="eyebrow">Open-source testing infrastructure</p>
+            <h1>See the whole testing picture.</h1>
+            <p class="lead">Bring automated runs and human checks into one consistent flow — without replacing Playwright or locking your results into another platform.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="./docs/">Get started</a>
+              <a class="button button-secondary" href="#components">Explore components</a>
+            </div>
+            <div class="trust-row" aria-label="Product attributes">
+              <span class="tag">Open source</span>
+              <span class="tag">Self-hosted</span>
+              <span class="tag">Built for Playwright</span>
+            </div>
+          </div>
+
+          <div class="demo-frame" aria-label="Placeholder representation of a unified test run">
+            <div class="window-bar"><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span></div>
+            <div class="demo-stack">
+              <div class="demo-row"><span class="status-dot"></span><span>Authentication flow</span><span class="status-label">PASSED</span></div>
+              <div class="demo-row"><span class="status-dot"></span><span>Checkout validation</span><span class="status-label">PASSED</span></div>
+              <div class="demo-row"><span class="status-dot manual"></span><span>Video quality review</span><span class="status-label">HUMAN</span></div>
+              <div class="demo-row"><span class="status-dot"></span><span>Post-call cleanup</span><span class="status-label">PASSED</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-border" id="workflow">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">One run, one context</p>
+            <h2>Automation does the setup. A human checks what needs judgment. Testing continues.</h2>
+          </div>
+          <div class="flow">
+            <div class="flow-step"><strong>Prepare</strong><br />Playwright creates the state.</div>
+            <div class="flow-step"><strong>Verify</strong><br />A person performs the manual check.</div>
+            <div class="flow-step"><strong>Continue</strong><br />Automation completes the scenario.</div>
+            <div class="flow-step"><strong>Report</strong><br />The result stays with the run.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-border" id="components">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Start where you need</p>
+            <h2>Three independent components. One connected workflow.</h2>
+            <p>Use any component on its own, or combine them as your testing process grows.</p>
+          </div>
+          <div class="grid-3">
+            <article class="card">
+              <span class="card-index">01 / REPORT SERVER</span>
+              <h3>Keep reports and run history in one place.</h3>
+              <p>Store, merge, serve and analyze Playwright reports for the whole team.</p>
+              <a class="text-link" href="./report-server/">Explore Report Server →</a>
+            </article>
+            <article class="card">
+              <span class="card-index">02 / MANUAL STEP</span>
+              <h3>Keep human judgment inside the test.</h3>
+              <p>Add guided human actions to a regular Playwright test and keep their result in the report.</p>
+              <a class="text-link" href="./manual-step/">Explore Manual Step →</a>
+            </article>
+            <article class="card">
+              <span class="card-index">03 / REPORTER</span>
+              <h3>Send blob reports from CI automatically.</h3>
+              <p>Connect Playwright runs to your Report Server with a small reporter plugin.</p>
+              <a class="text-link" href="./reporter/">Explore Reporter →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-border">
+        <div class="container">
+          <div class="cta-panel">
+            <div>
+              <p class="eyebrow">Own the stack</p>
+              <h2>Open source and self-hosted.</h2>
+              <p>Run CyborgTest in your own environment, inspect the code and adopt only the components your team needs.</p>
+            </div>
+            <a class="button button-primary" href="https://github.com/CyborgTests" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-row container">
+        <span>© <span data-year></span> CyborgTest</span>
+        <div class="footer-links"><a href="./report-server/">Report Server</a><a href="./manual-step/">Manual Step</a><a href="./reporter/">Reporter</a><a href="./docs/">Docs</a></div>
+      </div>
+    </footer>
+    <script src="./assets/site.js"></script>
+  </body>
+</html>
